@@ -6,7 +6,22 @@
 	<link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
   	<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
   	<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
-  
+  	<script src="lib/angular/angular.min.js"></script>
+	  <script src="lib/angular/angular-route.min.js"></script>
+	  <script src="lib/angular/angular-animate.min.js"></script>
+
+	  <script type="text/javascript">
+		  window.onload = function(){
+		  	var one = document.getElementById("one");
+		  	one.addEventListener('click', function(e) {
+	    		location.href=location.href+"#/details/0";
+	    		location.reload();
+	  		});
+		  }
+	  </script>
+
+	  <script src="js/app.js"></script>
+	  <script src="js/controllers.js"></script>
 
   	<style>
 	  html,body {
@@ -20,7 +35,6 @@
 	  }
 	  paper-tabs {
 	    width: 100%;
-	    
 	  }
 	  .container {
 	    width: 80%;
@@ -28,7 +42,18 @@
 	  }
 	  @media (min-width: 481px) {
 	    paper-tabs {
-	      width: 700px;
+	    	margin-top: 64px;
+	    	margin-left: 150px;
+	    	position: relative;
+	      width: 1000px;
+	      background-color: #000000;
+    	  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    	color: #fff;
+	    }
+
+	    paper-tab{
+
+	    	
 	    }
 	    .container {
 	      width: 400px;
@@ -52,6 +77,50 @@
   			color: #ff4081;
 		}
 
+		.hello{
+			width: 1280px;
+			height: 720px;
+			display: block;
+			top: -192.5px;
+			left: 0px;
+		}
+
+		.hello1
+		{
+			position: absolute;
+			width: 1280px;
+		}
+
+		.cengage-text-wrap
+		{
+			height: 147px;
+		    position: absolute;
+		    top: 10%;
+		    
+		    width: 100%;
+		}
+		h5{
+			color: #fff;
+		    font-size: 62px;
+		    font-weight: 600;
+		    line-height: 50px;
+		    margin-bottom: 25px;
+		    text-align: center;
+		   
+		    width: 100%;
+		}
+
+		p{
+			color: #fff;
+		    font-size: 26px;
+		    font-weight: 600;
+		    line-height: 50px;
+		    margin-bottom: 25px;
+		    text-align: center;
+		    
+		    width: 100%;
+		}
+
 	</style>
 
 
@@ -59,20 +128,35 @@
 
 <body unresolved>
 
+	<div id="big-video" class="hello">
+	<video id="big-ass-video" class="hello1" preload="auto" autoplay src="http://www.kalexiko.com/assets/frontend/video/klx-vid.mp4"></video>
+	
+
 	<core-header-panel mode="waterfall-tall" tallClass="medium-tall">
 	<div class="core-header">
 	  <paper-tabs selected="0" class="pink">
-	      <paper-tab>Home</paper-tab>
-	      <paper-tab>Resume</paper-tab>
-	      <paper-tab>Work</paper-tab>
-	      <paper-tab>Blog</paper-tab>
-	      <paper-tab>Contact</paper-tab>
+	      <paper-tab id="one">Aayush</paper-tab>
+	      <paper-tab >Jacob</paper-tab>
+	      <paper-tab>Sameer</paper-tab>
+	      <paper-tab>Sanat</paper-tab>
+	      <paper-tab>Steven</paper-tab>
+	      <paper-tab>Roseanna</paper-tab>
+	      <paper-tab>Sanket</paper-tab>
+	      <paper-tab>Kevin</paper-tab>
+	      <paper-tab>Dalton</paper-tab>
+	      <paper-tab>Samarth</paper-tab>
+	      <paper-tab>Melanie</paper-tab>
 	    </paper-tabs>
 	</div>
-	<div></div>
+	<div class="cengage-text-wrap">
+		<h5>Cengage Learning</h5>
+		<p>The Brogrammers</p>
+	</div>
 	</core-header-panel>
 
-
+	<div class="main" ng-view></div>
+	
+	</div>
 </body>
 
 </html>
