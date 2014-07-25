@@ -12,7 +12,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'partials/details.html',
     controller: 'DetailsController'
   }).
-  otherwise({
-    redirectTo: '/list'
+  when('/details', {
+    templateUrl: 'partials/gallery.html'
   });
 }]);

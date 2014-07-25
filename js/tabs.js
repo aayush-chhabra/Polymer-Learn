@@ -10,6 +10,7 @@ window.onload = function() {
             var nineTab = document.getElementById("nine");
             var tenTab = document.getElementById("ten");
             var elevenTab = document.getElementById("eleven");
+            var twelveTab = document.getElementById("twelve");
 
             oneTab.addEventListener("click", function(){
                 window.location.href="#/details/0";
@@ -36,5 +37,8 @@ window.onload = function() {
             });
             elevenTab.addEventListener("click", function(){
                 window.location.href="#/details/10";
+            });
+            twelveTab.addEventListener("click", function(){
+                window.location.href="#/details";
             });
         }
