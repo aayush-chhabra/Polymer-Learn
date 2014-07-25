@@ -1,9 +1,9 @@
 [
   {
-    "name":"Barot Bellingham",
-    "shortname":"Barot_Bellingham",
-    "reknown":"Royal Academy of Painting and Sculpture",
-    "bio":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different"
+    "name":"Aayush Chhabra",
+    "shortname":"Aayush_Chhabra",
+    "reknown":"Rensselaer Polytechnic Institute",
+    "bio":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
   },
   {
     "name":"Jonathan G. Ferrar II",
@@ -12,10 +12,10 @@
     "bio":"The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations"
   },
   {
-    "name":"Hillary Hewitt Goldwynn-Post",
-    "shortname":"Hillary_Goldwynn",
-    "reknown":"New York University",
-    "bio":"Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new sculptors, including the Divinity Circle, the International Sculptor's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features 25 abstract watercolor paintings that contain only water images including waves, deep sea, and river."
+    "name":"Sameer Sawla",
+    "shortname":"Sameer_Sawla",
+    "reknown":"Rensselaer Polytechnic Institute",
+    "bio":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
   },
   {
     "name":"Hassum Harrod",
@@ -46,6 +46,18 @@
     "shortname":"Riley_Rewington",
     "reknown":"Roux Academy of Art, Media, and Design",
     "bio":"A first-year student at the Roux Academy of Art, Media, and Design, Riley is already changing the face of modern art at the university. Riley's exquisite abstract pieces have no intention of ever being understood, but instead beg the viewer to dream, create, pretend, and envision with their mind's eye. Riley will be speaking on the \"Art of Abstract\" during Thursday's schedule"
+  },
+  {
+    "name":"Xhou Ta",
+    "shortname":"Xhou_Ta",
+    "reknown":"China International Art University",
+    "bio":"A senior at the China International Art University, Xhou has become well-known for his miniature sculptures, often the size of a rice granule, that are displayed by rear projection of microscope images on canvas. Xhou will discuss the art and science behind his incredibly detailed works of art."
+  },
+  {
+    "name":"Xhou Ta",
+    "shortname":"Xhou_Ta",
+    "reknown":"China International Art University",
+    "bio":"A senior at the China International Art University, Xhou has become well-known for his miniature sculptures, often the size of a rice granule, that are displayed by rear projection of microscope images on canvas. Xhou will discuss the art and science behind his incredibly detailed works of art."
   },
   {
     "name":"Xhou Ta",

@@ -1,162 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
+
 <head>
-	<title>Polymer Test Example</title>
-	<script type="text/javascript" src="bower_components/platform/platform.js"></script>
-	<link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
-  	<link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
-  	<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
-  	<script src="lib/angular/angular.min.js"></script>
-	  <script src="lib/angular/angular-route.min.js"></script>
-	  <script src="lib/angular/angular-animate.min.js"></script>
+    <title>Cengage Learning - Interns</title>
+    <script type="text/javascript" src="bower_components/platform/platform.js"></script>
+    <link rel="import" href="../bower_components/core-header-panel/core-header-panel.html">
+    <link rel="import" href="../bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+    
 
-	  <script type="text/javascript">
-		  window.onload = function(){
-		  	var one = document.getElementById("one");
-		  	one.addEventListener('click', function(e) {
-	    		location.href=location.href+"#/details/0";
-	    		location.reload();
-	  		});
-		  }
-	  </script>
+    <link rel="stylesheet" href="css/style.css">
 
-	  <script src="js/app.js"></script>
-	  <script src="js/controllers.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-animate.min.js"></script>
 
-  	<style>
-	  html,body {
-	    height: 100%;
-	    margin: 0;
-	    background-color: #E5E5E5;
-	    font-family: 'RobotoDraft', sans-serif;
-	  }
-	  core-header-panel {
-	    height: 100%;
-	  }
-	  paper-tabs {
-	    width: 100%;
-	  }
-	  .container {
-	    width: 80%;
-	    margin: 50px auto;
-	  }
-	  @media (min-width: 481px) {
-	    paper-tabs {
-	    	margin-top: 64px;
-	    	margin-left: 150px;
-	    	position: relative;
-	      width: 1000px;
-	      background-color: #000000;
-    	  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
-    	color: #fff;
-	    }
 
-	    paper-tab{
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
 
-	    	
-	    }
-	    .container {
-	      width: 400px;
-	    }
-	  }
-		.core-header
-		{
-		   	color: white;
-		}
-		.transparent-teal
-		{
-			background-color: transparent;
-			color: #ffff8d;
-			box-shadow: none;
-		}
-		paper-tabs.pink::shadow #selectionBar {
-  			background-color: #ff4081;
-		}
+    <script type="text/javascript" src="js/tabs.js"></script>
 
-		.pink paper-tab::shadow #ink {
-  			color: #ff4081;
-		}
 
-		.hello{
-			width: 1280px;
-			height: 720px;
-			display: block;
-			top: -192.5px;
-			left: 0px;
-		}
-
-		.hello1
-		{
-			position: absolute;
-			width: 1280px;
-		}
-
-		.cengage-text-wrap
-		{
-			height: 147px;
-		    position: absolute;
-		    top: 10%;
-		    
-		    width: 100%;
-		}
-		h5{
-			color: #fff;
-		    font-size: 62px;
-		    font-weight: 600;
-		    line-height: 50px;
-		    margin-bottom: 25px;
-		    text-align: center;
-		   
-		    width: 100%;
-		}
-
-		p{
-			color: #fff;
-		    font-size: 26px;
-		    font-weight: 600;
-		    line-height: 50px;
-		    margin-bottom: 25px;
-		    text-align: center;
-		    
-		    width: 100%;
-		}
-
-	</style>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: #E5E5E5;
+            font-family: 'RobotoDraft', sans-serif;
+        }
+        core-header-panel {
+            height: 100%;
+        }
+        paper-tabs {
+            width: 100%;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        @media (min-width: 481px) {
+            paper-tabs {
+                margin-top: 64px;
+                margin-left: 150px;
+                position: relative;
+                width: 1000px;
+                background-color: #000000;
+                box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+                color: #fff;
+            }
+            paper-tab {} .container {
+                width: 400px;
+            }
+        }
+        .core-header {
+            color: white;
+        }
+        .transparent-teal {
+            background-color: transparent;
+            color: #ffff8d;
+            box-shadow: none;
+        }
+        paper-tabs.pink::shadow #selectionBar {
+            background-color: #ff4081;
+        }
+        .pink paper-tab::shadow #ink {
+            color: #ff4081;
+        }
+        .hello {
+            width: 1280px;
+            height: 720px;
+            display: block;
+            top: -192.5px;
+            left: 0px;
+        }
+        .hello1 {
+            position: absolute;
+            width: 1280px;
+        }
+        .cengage-text-wrap {
+            height: 147px;
+            position: absolute;
+            top: 10%;
+            width: 100%;
+        }
+        h5 {
+            color: #fff;
+            font-size: 62px;
+            font-weight: 600;
+            line-height: 50px;
+            margin-bottom: 25px;
+            text-align: center;
+            width: 100%;
+        }
+        p {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 50px;
+            margin-bottom: 25px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
 
 
 </head>
 
 <body unresolved>
 
-	<div id="big-video" class="hello">
-	<video id="big-ass-video" class="hello1" preload="auto" autoplay src="http://www.kalexiko.com/assets/frontend/video/klx-vid.mp4"></video>
-	
+    <div id="big-video" class="hello">
+        <video id="big-ass-video" class="hello1" preload="auto" autoplay src="http://www.kalexiko.com/assets/frontend/video/klx-vid.mp4"></video>
 
-	<core-header-panel mode="waterfall-tall" tallClass="medium-tall">
-	<div class="core-header">
-	  <paper-tabs selected="0" class="pink">
-	      <paper-tab id="one">Aayush</paper-tab>
-	      <paper-tab >Jacob</paper-tab>
-	      <paper-tab>Sameer</paper-tab>
-	      <paper-tab>Sanat</paper-tab>
-	      <paper-tab>Steven</paper-tab>
-	      <paper-tab>Roseanna</paper-tab>
-	      <paper-tab>Sanket</paper-tab>
-	      <paper-tab>Kevin</paper-tab>
-	      <paper-tab>Dalton</paper-tab>
-	      <paper-tab>Samarth</paper-tab>
-	      <paper-tab>Melanie</paper-tab>
-	    </paper-tabs>
-	</div>
-	<div class="cengage-text-wrap">
-		<h5>Cengage Learning</h5>
-		<p>The Brogrammers</p>
-	</div>
-	</core-header-panel>
 
-	<div class="main" ng-view></div>
-	
-	</div>
+        <core-header-panel mode="waterfall-tall" tallClass="medium-tall">
+            <div class="core-header">
+                <paper-tabs selected="0" class="pink">
+                    <paper-tab id="one" value="0">Aayush</paper-tab>
+                    <paper-tab id="two" value="2">Jacob</paper-tab>
+                    <paper-tab id="three" value="3">Sameer</paper-tab>
+                    <paper-tab id="four" value="4">Sanat</paper-tab>
+                    <paper-tab id="five" value="5">Steven</paper-tab>
+                    <paper-tab id="six" value="6">Roseanna</paper-tab>
+                    <paper-tab id="seven" value="7">Sanket</paper-tab>
+                    <paper-tab id="eight" value="8">Kevin</paper-tab>
+                    <paper-tab id="nine" value="9">Dalton</paper-tab>
+                    <paper-tab id="ten" value="10">Samarth</paper-tab>
+                    <paper-tab id="eleven" value="11">Melanie</paper-tab>
+                </paper-tabs>
+            </div>
+            <div class="cengage-text-wrap">
+                <h5>Cengage Learning</h5>
+                <p>The Brogrammers</p>
+            </div>
+
+            <div class="main" ng-view></div>
+
+
+        </core-header-panel>
+
+        
+
+
+    </div>
+
 </body>
 
 </html>

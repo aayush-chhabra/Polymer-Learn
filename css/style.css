@@ -292,10 +292,11 @@ a.small {
 }
 
 .artistinfo {
+  position: relative;
   font-size: 1.1em;
   line-height: 160%;
-  background: #EEE8D5;
-  color: #0F4150;
+  background: #000;
+  color: #fff;
   width: 90%;
   min-width: 320px;
   max-width: 620px;
@@ -304,7 +305,7 @@ a.small {
   margin-bottom: 30px;
   padding: 20px 30px;
   border-radius: 10px;
-  z-index: 20;
+  z-index: 100;
 }
 
 .artistinfo h1{
