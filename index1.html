@@ -48,9 +48,7 @@
         @media (min-width: 481px) {
             paper-tabs {
                 margin-top: 64px;
-                margin-left: auto;
-                margin-right: auto;
-
+                margin-left: 150px;
                 position: relative;
                 width: 1000px;
                 background-color: #000000;
@@ -76,15 +74,15 @@
             color: #ff4081;
         }
         .hello {
-            width: 100%;
-            height: 100%;
+            width: 1280px;
+            height: 720px;
             display: block;
             top: -192.5px;
             left: 0px;
         }
         .hello1 {
             position: absolute;
-            width: 100%;
+            width: 1280px;
         }
         .cengage-text-wrap {
             height: 147px;
@@ -119,12 +117,12 @@
 <body unresolved>
 
     <div id="big-video" class="hello">
-        <video id="big-ass-video" class="hello1" preload="auto" autoplay src="video.mp4"></video>
+        <video id="big-ass-video" class="hello1" preload="auto" loop autoplay src="http://www.kalexiko.com/assets/frontend/video/klx-vid.mp4"></video>
 
 
         <core-header-panel mode="waterfall-tall" tallClass="medium-tall">
             <div class="core-header">
-                <paper-tabs class="pink">
+                <paper-tabs selected="0" class="pink">
                     <paper-tab id="one" value="0">Aayush</paper-tab>
                     <paper-tab id="two" value="2">Jacob</paper-tab>
                     <paper-tab id="three" value="3">Sameer</paper-tab>
@@ -139,10 +137,10 @@
                     <paper-tab id="twelve" value="12">Gallery</paper-tab>
                 </paper-tabs>
             </div>
-            <!-- <div class="cengage-text-wrap">
-                <h5>Cengage Learning</h5>
-                <p>The Brogrammers</p>
-            </div> -->
+            <div class="artist cf" ng-model="artists" style="height: 200px">
+                <h1>Gallery!!!</h1>
+                <h2>Soon gonna be up!!</h2>
+              </div>
 
             <div class="main" ng-view></div>
 
@@ -157,4 +155,4 @@
 
 </body>
 
-</html>
+</htmlallery

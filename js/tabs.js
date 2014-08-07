@@ -39,6 +39,6 @@ window.onload = function() {
                 window.location.href="#/details/10";
             });
             twelveTab.addEventListener("click", function(){
-                window.location.href="#/details";
+                window.location.href="/gallery";
             });
         }
